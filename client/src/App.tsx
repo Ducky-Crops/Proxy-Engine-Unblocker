@@ -18,7 +18,7 @@ function App() {
       <div>
         {array.map((ver, index) => (
           <div key={index}>
-            <p><b>{ver}</b></p>
+            <p className='ver'>{ver}</p>
             <br></br>
           </div>
         ))}

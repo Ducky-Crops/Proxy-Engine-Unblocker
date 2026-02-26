@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+  font-family: sans-serif, Arial;
+  font-weight: bold;
+  color: white;
+}
+
+.ver {
+  font-weight: bolder;
+  font-family: inherit;
+}
