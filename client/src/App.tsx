@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import './App.css'
 import axios from 'axios';
+import './App.css'
+import './AboutBlank.ts'
 
 function App() {
   const [array, setArray] = useState([]);
