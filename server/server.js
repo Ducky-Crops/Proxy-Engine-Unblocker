@@ -14,4 +14,5 @@ app.get('/api', (req, res) => {
 
 app.listen(port, () => {
   console.warn(`Server started on Port: ${port}`);
+  console.warn(`Link: http://localhost:${port}`);
 });

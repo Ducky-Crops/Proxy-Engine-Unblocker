@@ -1,30 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css'
-import './AboutBlank.ts'
+import './App.css';
+import './scripts/AboutBlank.ts';
+import './components/Credits_label.tsx';
+import './components/Version_Label.tsx';
+import { Version_Label } from './components/Version_Label.tsx';
 
 function App() {
-  const [array, setArray] = useState([]);
-
-  const fetchAPI = async () => {
-    const response = await axios.get('http://localhost:2222/api');
-    setArray(response.data.cat);
-  };
-
-  useEffect (() => {
-    fetchAPI();
-  }, []);
-
   return (
-      <div>
-        {array.map((ver, index) => (
-          <div key={index}>
-            <p className='ver'>{ver}</p>
-            <br></br>
-          </div>
-        ))}
-      </div>
-  )
+    <Version_Label />
+  );
 }
 
 export default App
