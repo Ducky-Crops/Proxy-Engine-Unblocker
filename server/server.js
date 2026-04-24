@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const { scramjetPath } = require('@mercuryworkshop/scramjet/path');
 const port = 2222;
 const corsOptions = {
   origin: ['http://localhost:5173']

@@ -15,6 +15,7 @@
   "author": "Thecatkidx3",
   "license": "ISC",
   "dependencies": {
+    "@mercuryworkshop/scramjet": "^1.0.2",
     "cors": "^2.8.6",
     "express": "^5.2.1"
   },
